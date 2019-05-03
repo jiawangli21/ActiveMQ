@@ -7,16 +7,14 @@ import javax.jms.TextMessage;
 public class TopicMessageListen implements MessageListener{
 
 	 public void onMessage(Message message) {
-	        System.out.println("收到我的第一个activemq-spring消息！");
+	        System.out.println("鏀跺埌鎴戠殑绗竴涓猘ctivemq-spring娑堟伅锛�");
 	        try {
-	        	//消息确认
+	        	//娑堟伅纭
 	        	message.acknowledge();
 	            TextMessage tm = (TextMessage)(message);
 	            System.out.println(tm.getText());
 	        } catch (Exception e) {
 	            e.printStackTrace();
-	            
 	        }
-	        
 	    }
 }

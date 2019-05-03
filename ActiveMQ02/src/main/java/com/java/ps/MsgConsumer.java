@@ -58,9 +58,7 @@ public class MsgConsumer {
 					consumer.close();
 				} catch (JMSException e) {
 					e.printStackTrace();
-				}
-	        	
-					
+				}	
 	        }
 	    }
 }

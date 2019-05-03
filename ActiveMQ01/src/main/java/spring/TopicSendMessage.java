@@ -19,16 +19,15 @@ public class TopicSendMessage {
 				public Message createMessage(Session session) throws JMSException {
 
 					TextMessage message = session.createTextMessage();
-                    message.setText("这是我的第一个activemq-spring项目！");
+                    message.setText("杩欐槸鎴戠殑绗竴涓猘ctivemq-spring椤圭洰锛�");
 					return message;
 				}
 			};
 	    	jmsTemplate.send(mc);
-			System.out.println("消息发送成功！");
+			System.out.println("娑堟伅鍙戦�佹垚鍔燂紒");
 		}
 
 	    public static void main(String[] args) {
 	        new TopicSendMessage().sendMessage();
-
 	    }
 }
